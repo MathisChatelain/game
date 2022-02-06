@@ -1,0 +1,22 @@
+* {
+    font-size: 1em;
+    font-family: 'Courier New', monospace,'Comic Sans','Cambria', 'Cochin', Georgia, Times, 'Times New Roman',sans-serif;
+    font-weight:bold;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+}
+
+.player {
+    --size : 100px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    background-color: rgb(136, 62, 62);
+    border : solid black 5px;
+    top: calc(50% - var(--size)/2);
+    left: calc(50% - var(--size)/2);
+}
