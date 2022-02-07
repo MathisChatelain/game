@@ -8,15 +8,28 @@ body {
     margin: 0px;
     height: 100vh;
     background-color: rgb(59, 59, 59);
+    overflow: hidden;
 }
 
 .player {
-    --size : 100px;
-    width: var(--size);
-    height: var(--size);
+    --sizeX : 100px;
+    --sizeY : 100px;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    transform : translate(calc(var(--sizeX)*(-0.5)),calc(var(--sizeY)*(-0.5))); /* Place la position au centre du player*/
     position: absolute;
     background-color: rgb(136, 62, 62);
     border : solid black 5px;
-    top: calc(50% - var(--size)/2);
-    left: calc(50% - var(--size)/2);
+}
+
+.projectile {
+    --sizeX : 10px;
+    --sizeY : 10px;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    transform : translate(calc(var(--sizeX)*(-0.5)),calc(var(--sizeY)*(-0.5))); /* Place la position au centre du player*/
+    position: absolute;
+    background-color: rgb(230, 209, 91);
+    border : solid black 1px;
+    border-radius: 50%;
 }
